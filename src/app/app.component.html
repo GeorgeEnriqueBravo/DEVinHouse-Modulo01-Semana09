@@ -1,0 +1,97 @@
+  <!-- Exercício 03 - Componentes -->
+<app-navbar></app-navbar>
+
+<div class="container total">
+  <!-- Exercício 01 - Bootstrap -->
+    <form class="row g-3">
+      <div class="ex1e2 col margin">
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Nome</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-12">
+            <label for="inputPassword4" class="form-label">Carga Horária de horas aula</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Escola</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="">
+          </div>
+
+          <div class="col-md-12">
+            <label for="inputState" class="form-label">Professor(a)</label>
+            <select id="inputState" class="form-select">
+              <option selected disabled>Selecione uma opção</option>
+              <option>Otávio</option>
+              <option>Vivian</option>
+              <option>Leandro</option>
+              <option>Cláudia</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            Matéria Opcional:
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Sim
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Não
+            </label>
+          </div>
+          <br>
+          
+          <!-- Exercício 02 - Componentes do bootstrap -->
+          <!-- Botão pra chamar o Modal -->
+          <button (click)="comunicaApp()" type="button" class="col-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Enviar
+          </button><br><br>
+
+            <!-- Exercício 7 - Injeção de dependência-->
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">E-mail</label>
+              <input [(ngModel)]="email" name="emailName" type="email" class="form-control" id="email">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Senha</label>
+              <input [(ngModel)]="senha" name="senhaName" type="password" class="form-control" id="senha">
+            </div>
+            <hr>
+              <!-- Exercício 8 - @Output -->
+              <div class="ex8">
+                <h4>Digite para ver no console cada tecla digitada na busca.</h4>
+                <app-busca (actionOutput)="digita($event)"></app-busca>
+              </div>
+
+          </form>
+      </div> 
+      
+    <!-- Modal do exercício 2-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+          </div>
+          <div class="modal-body">
+            Formulário enviado com sucesso!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <br>
+
+  <!-- Exercício 4 - Componente (Parte 1) -->
+  <!-- Exercício 5 - Property Binding (Parte 2)  -->
+  <!-- Exercício 6 - @Input (Parte 3) -->
+      <app-item-card [personagemDoFilho]="personagem"></app-item-card>
+</div>
