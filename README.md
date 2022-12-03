@@ -10,7 +10,7 @@ para baixa-lo. Após o download, abra a pasta do projeto por um terminal ou pelo
   
 ---
 
-# Lista de exercícios:
+# Lista de exercícios <img width="75px" alt="Philips" src="./src/assets/images/lista.png"/>
 ### [M1S09] Ex 1 - Bootstrap
 
 Em um projeto angular, crie um novo template para um formulário de registro de matérias usando classes de estilização e estrutura bootstrap, o visual e a estrutura usando classes do bootstrap será avaliado, portanto caprichem no design ^-^.
