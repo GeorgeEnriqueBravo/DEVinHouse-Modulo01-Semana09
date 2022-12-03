@@ -11,6 +11,24 @@ para baixa-lo. Após o download, abra a pasta do projeto por um terminal ou pelo
 ---
 
 # Lista de exercícios:
+### [M1S09] Ex 1 - Bootstrap
+
+Em um projeto angular, crie um novo template para um formulário de registro de matérias usando classes de estilização e estrutura bootstrap, o visual e a estrutura usando classes do bootstrap será avaliado, portanto caprichem no design ^-^.
+O formulário deverá ter os seguintes campos inputs: “nome”, “carga horária de horas aula” e “escola”. Também no formulário deverá ter um campo “Professor(a)” que será um select com 4 opções, Otávio, Vivian, Leandro e Cláudia, além disso dois radiobutton verificando se a matéria é opcional ou não.
+
+### [M1S09] Ex 2 - Componentes do bootstrap
+
+No mesmo projeto angular crie um botão de enviar formulário que ao clicar carregue um modal do bootstrap com a mensagem “Formulário enviado com sucesso” e um botão para fechar o modal. <br>
+OBS: lembrar de importar o script js do bootstrap no arquivo angular.json.
+
+### [M1S09] Ex 3 - Componentes
+
+Crie um componente geral com estilizações do bootstrap chamado navbar que será a principal forma de navegação de um site fictício. <br>
+Ex: <a href="https://getbootstrap.com/docs/5.2/components/navbar/#how-it-works" target="_blank">
+    Navbar
+</a>
+
+No final para verificar seu funcionamento chame o navbar no componente inicial (app)
 
 ---
 
